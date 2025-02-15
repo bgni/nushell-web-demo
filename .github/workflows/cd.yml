@@ -36,6 +36,7 @@ jobs:
           cache-directories: "${{ github.workspace }}/node_modules"
           rustflags: $RUSTFLAGS
       # - run: npm ci --ignore-scripts
+      - run: find -ls
       - run: npm run install
         continue-on-error: true
       - run: npm run build
