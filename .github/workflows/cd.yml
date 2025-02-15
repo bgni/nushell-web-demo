@@ -37,6 +37,7 @@ jobs:
           rustflags: $RUSTFLAGS
       # - run: npm ci --ignore-scripts
       - run: find -ls
+      - run: cargo build --release
       - run: npm run install
         continue-on-error: true
       - run: npm run build
